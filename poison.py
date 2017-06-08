@@ -14,8 +14,8 @@ from ai import NEv2 as AI
 board = Board()
 
 # Initialize the players
-Players = initPlayers(NP, AI)
-#Players = initAllAI(NP, AI)
+#Players = initPlayers(NP, AI)
+Players = initAllAI(NP, AI)
 Starter = Players[0] # Always start from Player[0]
 
 for i in range(NRounds):
@@ -32,4 +32,6 @@ for i in range(NRounds):
     CurrentPlayer = CurrentPlayer.next()
 
   PrintScores(board, Players)
+
+  raw_input("Press ENTER to continue...")
 #board.Score()
