@@ -8,7 +8,7 @@ NRounds = NP * 1 # Setting for a full regular game of NP rounds
 #NRounds = 1 
 
 from base import *
-from ai import NEv1 as AI
+from ai import NEv2 as AI
 
 # Initialize the board
 board = Board()
